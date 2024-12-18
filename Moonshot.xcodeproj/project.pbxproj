@@ -396,10 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Moonshot/Preview Content\"";
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = KR98T3MEHQ;
-=======
->>>>>>> 3e38ced5168ae92e5d21bb9a9ed59c8f459f1046
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -428,10 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Moonshot/Preview Content\"";
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = KR98T3MEHQ;
-=======
->>>>>>> 3e38ced5168ae92e5d21bb9a9ed59c8f459f1046
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
