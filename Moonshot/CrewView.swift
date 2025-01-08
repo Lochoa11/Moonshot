@@ -7,10 +7,7 @@
 
 import SwiftUI
 struct CrewMemberRow: View {
-    let index: Int
     let crewMember: CrewMember
-    let totalMembers: Int
-
     var body: some View {
         NavigationLink(value: crewMember.astronaut) {
             VStack {
@@ -30,12 +27,6 @@ struct CrewMemberRow: View {
                     Text(crewMember.role)
                         .foregroundStyle(.white.opacity(0.5))
                 }
-                if index != totalMembers - 1 {
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
-                }
             }
             .frame(maxWidth: .infinity)
             .padding(.horizontal)
@@ -48,8 +39,8 @@ struct CrewView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
-                ForEach(Array(crew.enumerated()), id: \.1.role) { index, crewMember in
-                    CrewMemberRow(index: index, crewMember: crewMember, totalMembers: crew.count)
+                ForEach(crew, id: \.role) { crewMember in
+                    CrewMemberRow(crewMember: crewMember)
                 }
             }
         }

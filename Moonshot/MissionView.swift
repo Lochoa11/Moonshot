@@ -45,8 +45,8 @@ struct MissionView: View {
                         .padding(.vertical)
                 }
                 .padding(.horizontal)
-                NavigationLink("Crew") {
-                    CrewView(crew: crew)
+                NavigationLink(value: crew){
+                    Text("View Crew")
                 }
                 .underline()
                 .font(.title.bold())
@@ -54,6 +54,9 @@ struct MissionView: View {
                 .foregroundStyle(.blue)
             }
             .padding(.bottom)
+            .navigationDestination(for: [CrewMember].self) { crew in
+                CrewView(crew: crew)
+            }
         }
         .navigationTitle(mission.displayName)
         .navigationBarTitleDisplayMode(.inline)
