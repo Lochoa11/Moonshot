@@ -24,6 +24,7 @@ struct CrewMemberRow: View {
                     Text(crewMember.astronaut.name)
                         .foregroundStyle(.white)
                         .font(.title)
+                        .accessibilityLabel(crewMember.astronaut.name.replacingOccurrences(of: ".", with: " "))
                     Text(crewMember.role)
                         .foregroundStyle(.white.opacity(0.5))
                 }

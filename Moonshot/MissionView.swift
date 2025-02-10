@@ -27,6 +27,7 @@ struct MissionView: View {
                         width * 0.6
                     }
                     .padding(.top)
+                    .accessibilityLabel(mission.badge)
                 Text(mission.formattedLaunchDate)
                 
                 VStack(alignment: .leading) {
